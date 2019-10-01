@@ -12,7 +12,10 @@
   "dependencies": {
     "@hapi/hapi": "^18.4.0",
     "@hapi/joi": "^16.1.4",
-    "lodash-es": "^4.17.15"
+    "knex": "^0.19.4",
+    "lodash-es": "^4.17.15",
+    "objection": "^1.6.11",
+    "sqlite3": "^4.1.0"
   },
   "devDependencies": {
     "@hapi/code": "^6.0.0",
