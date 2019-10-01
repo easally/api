@@ -11,9 +11,12 @@
   "author": "",
   "dependencies": {
     "@hapi/hapi": "^18.4.0",
+    "@hapi/joi": "^16.1.4",
     "lodash-es": "^4.17.15"
   },
   "devDependencies": {
+    "@hapi/code": "^6.0.0",
+    "@hapi/lab": "^20.3.2",
     "standard": "^14.3.1"
   }
 }
