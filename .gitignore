@@ -1,1 +1,8 @@
+# Environment-specific
+.env
+
+# Dependencies
 node_modules/
+
+# Temporary
+.tmp
