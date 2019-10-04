@@ -1,25 +1,43 @@
 {
   "name": "easally-api",
-  "version": "1.0.0",
-  "description": "The Easally API",
+  "version": "0.1.0",
+  "description": "API for running Easally accessibility tests.",
+  "author": {
+    "name": "Stephen Lewis",
+    "email": "code@stephenlewis.me"
+  },
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "lab -v **/*.test.js"
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "start": "node lib/index.js",
+    "test": "lab -v"
   },
-  "author": "",
-  "dependencies": {
-    "@hapi/hapi": "^18.4.0",
-    "@hapi/joi": "^16.1.4",
-    "knex": "^0.19.4",
-    "lodash-es": "^4.17.15",
-    "objection": "^1.6.11",
-    "sqlite3": "^4.1.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easally/api.git"
   },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "easally"
+  ],
   "devDependencies": {
     "@hapi/code": "^6.0.0",
     "@hapi/lab": "^20.3.2",
     "standard": "^14.3.1"
-  }
+  },
+  "dependencies": {
+    "@hapi/hapi": "^18.4.0",
+    "@hapi/joi": "^16.1.4",
+    "dotenv": "^8.1.0",
+    "knex": "^0.19.4",
+    "objection": "^1.6.11",
+    "sqlite3": "^4.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/easally/api/issues"
+  },
+  "homepage": "https://github.com/easally/api#readme"
 }
