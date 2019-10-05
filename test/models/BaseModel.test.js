@@ -6,7 +6,7 @@ const { expect } = require('@hapi/code')
 const { describe, it } = exports.lab = Lab.script()
 
 describe('BaseModel', () => {
-  it('generates a UUID', async () => {
+  it('generates the uuid property', async () => {
     const pattern = new RegExp('^[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$', 'i')
     const model = new BaseModel()
 
