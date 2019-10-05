@@ -2,11 +2,16 @@
 
 const Lab = require('@hapi/lab')
 const { expect } = require('@hapi/code')
-const { afterEach, beforeEach, describe, it } = exports.lab = Lab.script()
+const { afterEach, before, beforeEach, describe, it } = exports.lab = Lab.script()
 const { init } = require('../../lib/server')
+const storage = require('../../lib/storage')
 
 describe('POST /tests', () => {
   let server
+
+  before(() => {
+    storage.init()
+  })
 
   beforeEach(async () => {
     server = await init()
