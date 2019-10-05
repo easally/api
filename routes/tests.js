@@ -1,5 +1,5 @@
 const Joi = require('@hapi/joi')
-const QueuedTest = require('./../models/QueuedTest')
+const QueuedTest = require('../app/models/QueuedTest')
 
 module.exports = [
   {

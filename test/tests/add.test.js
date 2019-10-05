@@ -3,8 +3,8 @@
 const Lab = require('@hapi/lab')
 const { expect } = require('@hapi/code')
 const { afterEach, before, beforeEach, describe, it } = exports.lab = Lab.script()
-const { init } = require('../../lib/server')
-const storage = require('../../lib/storage')
+const { init } = require('../../app/server')
+const storage = require('../../app/storage')
 
 describe('POST /tests', () => {
   let server

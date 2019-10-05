@@ -7,11 +7,11 @@
     "email": "code@stephenlewis.me"
   },
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "app/index.js",
   "scripts": {
     "lint": "standard",
     "lint-fix": "standard --fix",
-    "start": "node lib/index.js",
+    "start": "node app/index.js",
     "test": "lab -v"
   },
   "repository": {

@@ -1,5 +1,5 @@
 const BaseModel = require('./BaseModel')
-const status = require('./../constants/testStatus')
+const status = require('../constants/testStatus')
 
 class QueuedTest extends BaseModel {
   async $beforeInsert (context) {

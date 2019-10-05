@@ -1,6 +1,6 @@
 'use strict'
 
-const BaseModel = require('./../../lib/models/BaseModel')
+const BaseModel = require('./../../app/models/BaseModel')
 const Lab = require('@hapi/lab')
 const { expect } = require('@hapi/code')
 const { describe, it } = exports.lab = Lab.script()
