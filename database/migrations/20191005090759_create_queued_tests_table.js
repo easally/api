@@ -16,4 +16,6 @@ exports.up = (knex) => {
   })
 }
 
-exports.down = (knex) => {}
+exports.down = (knex) => {
+  return knex.schema.dropTableIfExists('queued_tests')
+}
