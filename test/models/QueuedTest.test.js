@@ -3,7 +3,6 @@
 const Lab = require('@hapi/lab')
 const { expect } = require('@hapi/code')
 const { beforeEach, describe, it } = exports.lab = Lab.script()
-
 const QueuedTest = require('../../app/models/QueuedTest')
 const status = require('../../app/constants/testStatus')
 

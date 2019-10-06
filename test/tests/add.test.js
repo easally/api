@@ -3,10 +3,9 @@
 const Lab = require('@hapi/lab')
 const { expect } = require('@hapi/code')
 const { afterEach, before, beforeEach, describe, it } = exports.lab = Lab.script()
-const QueuedTest = require('./../../app/models/QueuedTest')
+const knex = require('knex')(require('../../knexfile'))
+const QueuedTest = require('../../app/models/QueuedTest')
 const { init } = require('../../app/server')
-const knexConfig = require('./../../knexfile')
-const knex = require('knex')(knexConfig)
 
 describe('POST /tests', () => {
   let server

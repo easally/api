@@ -1,7 +1,7 @@
 'use strict'
 
 const Hapi = require('@hapi/hapi')
-const Knex = require('knex')(require('./../knexfile'))
+const Knex = require('knex')(require('../knexfile'))
 const { Model } = require('objection')
 
 // -----------------------------------------------------------------------------

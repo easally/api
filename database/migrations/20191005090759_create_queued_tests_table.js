@@ -1,4 +1,4 @@
-const statuses = require('./../../app/constants/testStatus')
+const statuses = require('../../app/constants/testStatus')
 
 exports.up = (knex) => {
   return knex.schema.createTable('queued_tests', table => {
