@@ -1,7 +1,7 @@
 'use strict'
 
 const Hapi = require('@hapi/hapi')
-const Knex = require('knex')(require('../knexfile'))
+const knex = require('knex')(require('../knexfile'))
 const { Model } = require('objection')
 
 // -----------------------------------------------------------------------------
@@ -17,7 +17,7 @@ require('./../config/env').init()
 // -----------------------------------------------------------------------------
 // Initialise the ORM
 // -----------------------------------------------------------------------------
-Model.knex(Knex)
+Model.knex(knex)
 
 // -----------------------------------------------------------------------------
 // Register the routes
