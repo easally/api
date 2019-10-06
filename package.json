@@ -12,7 +12,7 @@
     "lint": "standard",
     "lint-fix": "standard --fix",
     "start": "node app/index.js",
-    "test": "lab -v"
+    "test": "lab -v -P '\\.test'"
   },
   "repository": {
     "type": "git",
