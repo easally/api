@@ -1,4 +1,6 @@
-require('dotenv').config()
+'use strict'
+
+require('./config/env').init()
 
 module.exports = {
   client: 'mysql2',
